@@ -5,56 +5,70 @@
     --my-fonts-color: #393E46;
 }
 
-* {
-    
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppings', sans-serif;    
-}
 body {
     background-color: var(--my-background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#topMenu {
+    background-color: var(--my-background-menu);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    top: 0px;    
 }
 header {
-    background-color: var(--my-background-menu);
-    color: var(--my-menu-color);
-    float: left;
-    height: 50px;
-    align-content: center;
-    margin:auto;
-    padding-left: 30px;
-    justify-content: space-between;    
+    width: fit-content;
+    margin-left: 30px;
+    flex: 1;
 }
-nav {
-    background-color: var(--my-background-menu);
+header h1 {
+    color: var(--my-menu-color);
 }
 .menuPrincipal {
-    background-color: var(--my-background-menu);
-    display:flex;
-    height: 50px;
-    margin-left: 35%;
-    margin-right: auto;
+    align-items: center;
+    padding: 0px;
+    flex: 2;    
 }
 .menuItem {
-    display: block;
-    font-size: 20px;
-    padding: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-self: center;      
-    a {
-        text-decoration: none;
-        color: var(--my-menu-color);
-        text-align:justify;
-    }  
+    display: inline-block;
+    min-width:fit-content;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
-.menuItem:hover {
-    background-color: var(--my-fonts-color);
+.menuItem > a {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: var(--my-menu-color);
 }
-hgroup h1 {
-    font-weight: bold;
+.conteudo {
+    width: 60%;
+    position: absolute;
+    top: 150px;
+    right: 20%;
+    left: 20%;
 }
-#portfolio {
-    width: 50%;
-    margin-left: 25%;
-    padding: 15px;
+
+#foto-perfil {
+    height: 250px;
+    width: 250px;
+    border: 10px solid var(--my-background-menu);
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 20px;
+}
+#apresentacao {
+    width: 500px;
+}
+
+#rodape {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align-last: center;
 }
