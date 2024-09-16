@@ -179,11 +179,17 @@ button:hover {
 
 #portfolio a, li {
     text-decoration: none;
+    list-style: none;
     display: block;
+    padding: 0;
 }
 
 #portfolio img {
     width: 800px;
+}
+
+#portfolio h3 {
+    color: var(--my-fonts-color);
 }
 
 
