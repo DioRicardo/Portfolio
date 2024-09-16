@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Pessoal</title>
+    <!-- Importando a folha de estilo para o site -->
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div id="topMenu">
+    <!-- O bloco abaixo é responsável pelo menu de navegação entre as páginas -->
+    <nav id="topMenu">
         <header>        
             <h1 class="tituloPag">Portfólio</h1>              
-        </header>        
+        </header>
+        <button id="menuButton">&#9776;</button>
         <ul class="menuPrincipal">
             <li class="menuItem"><a href="../index.html">Home</a></li>
             <li class="menuItem"><a href="./sobre.html">Sobre mim</a></li>
@@ -18,35 +21,39 @@
             <li class="menuItem"><a href="./portfolio.html">Meu Portfólio</a></li>
             <li class="menuItem"><a href="./formulario.html">Contato</a></li>
         </ul>
-    </div>
+    </nav>
+    <!-- Conteúdo do site. Criado como lista, de forma que podem ser adicionados novos projetos facilmente. -->
     <div class="conteudo">
         <div id="portfolio">
             <ul>
                 <li>
                     <ul>
-                        <li><a href=""><h3>Projeto 1</h3></a></li>
-                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quasi.</p></li>
-                        <li><img src="../img/PlaceHolder.jpg" alt=""></li>
+                        <li><a href="https://dioricardo.github.io/html-bandeiras/"><h3>Bandeiras em CSS.</h3></a></li>
+                        <li><p>Criei esse site com finalidade de estudar alguns conceitos de CSS. São desenhos das bandeiras de alguns países feitas utilizando apenas HTML e CSS. Sem nenhum tipo de ferramenta externa.</p></li>
+                        <li><img src="../img/bandeiras.png" alt="Print da página do site."></li>
                     </ul>
                 </li>
                 <li>
                     <ul>
-                        <li><a href=""><h3>Projeto 2</h3></a></li>
-                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quasi.</p></li>
-                        <li><img src="../img/PlaceHolder.jpg" alt=""></li>
+                        <li><a href="https://dioricardo.github.io/jogo-do-numero-secreto/"><h3>Jogo do Número Secreto</h3></a></li>
+                        <li><p>Esse projeto eu fiz acompanhando o curso de lógica de programação da Alura, onde foi dado a base do projeto e pude acompanhar e fazer toda a parte da lógica. Aprendi conceitos importantes sobre lógica de programação com JavaScript e também sobre como tornar interativas as páginas na internet.</p></li>
+                        <li><img src="../img/numero-secreto.png" alt="Print da página do site Número Secreto."></li>
                     </ul>
                 </li>
                 <li>
                     <ul>
-                        <li><a href=""><h3>Projeto 3</h3></a></li>
-                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quasi.</p></li>
-                        <li><img src="../img/PlaceHolder.jpg" alt=""></li>
+                        <li><a href="https://github.com/DioRicardo/ScreenSound"><h3>Screen Sound</h3></a></li>
+                        <li><p>Projeto feito em um de meus estudos de C# através da plataforma Alura. O projeto foi aprimorado durante as aulas, aplicando conceitos de Programação Orientada a Objetos.</p></li>
+                        <li><img src="../img/Screensound.PNG" alt="Print de tela do app console ScreenSound"></li>
                     </ul>
                 </li>
+                
             </ul>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
         </div>
     </div>
+
+    <!-- Rodapé com indicação de copyright -->
     <footer id="rodape">        
         <p class="copyright">&copy; Dio Ricardo, 2024</data></p>        
         <p class="copyright">Todos os direitos resevados.</p>

@@ -10,47 +10,48 @@
 body {
     background-color: var(--my-background);
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 /* Estilos para o Menu de navegação */
 
 #topMenu {
     background-color: var(--my-background-menu);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;    
+}
+#topMenu, .menuPrincipal {
     display: flex;
-    width: 100%;
-    align-items: center;
-    margin: auto;
-    position: fixed;
-    top: 0px;    
+    flex-direction: row;
 }
-header {
-    width: fit-content;
-    margin-left: 30px;
-    flex: 1;
-}
-header h1 {
+#topMenu h1, a {
     color: var(--my-menu-color);
+    padding: 0 20px;
+    text-decoration: none;
+}
+#topMenu h1 {
+    font-size: 1.8rem;
+    margin: 0 20px;
+}
+#topMenu a {
+    font-size: 1.5rem;
 }
 .menuPrincipal {
-    align-items: center;
-    padding: 0px;
-    flex: 2;    
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .menuItem {
-    display: inline-block;
-    min-width:fit-content;
-    margin: 20px;
-    text-align: center;
-    text-transform: uppercase;
+    padding: 0 20px;
 }
-.menuItem > a {
-    font-size: 1.25rem;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    color: var(--my-menu-color);
+#menuButton {
+    width: 100px;
+    position: absolute;
+    right: 45px;
+    display: none;
 }
-
 .menuItem:hover {
     scale: 1.2;
 }
@@ -58,14 +59,13 @@ header h1 {
 /* Estilos para o conteúdo das páginas */
 
 .conteudo {
-    width: 60%;
-    position: absolute;
-    top: 150px;
-    margin-bottom: 100px;    
-    right: 20%;
-    left: 20%;
-    font-size: 1.5rem;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 80%;
+    font-size: 1.25rem;
     z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #foto-perfil {
@@ -74,8 +74,8 @@ header h1 {
     border: 10px solid var(--my-background-menu);
     border-radius: 50%;
     position: absolute;
-    right: 10%;
-    top: 20px;
+    right: 15%;
+    top: 150px;
 }
 #tech-background {
     position:absolute;
@@ -85,7 +85,7 @@ header h1 {
     width: 1000px;
 }
 #apresentacao {
-    width: 500px;
+    max-width: 500px;
 }
 button {
     height: 50px;
@@ -128,6 +128,65 @@ button:hover {
     margin-right: auto;
 }
 
+#ferramentas {
+    text-align: center;
+}
+
+#ferramentas > div {
+    display: inline-block;
+    padding: 20px;
+
+}
+
+#ferramentas p {
+    text-align: center;
+    margin: 2px;
+}
+
+#ferramentas .medio {
+    background-color: #fef3c7;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #de8821;
+    text-transform: uppercase;
+}
+
+#ferramentas .basico {
+    background-color: #e0f2fe;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #49a7d8;
+    text-transform: uppercase;
+}
+
+#ferramentas img {
+    height: 100px;
+}
+
+#flaticon {
+    text-decoration: none;
+    color: var(--my-menu-color);
+    font-size: 15px;
+    text-align:end;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
+}
+
+#portfolio a, li {
+    text-decoration: none;
+    display: block;
+}
+
+#portfolio img {
+    width: 800px;
+}
+
+
 /* Estilos para o rodapé da página (Footer) */
 
 #rodape {
@@ -140,4 +199,85 @@ button:hover {
     background-color: var(--my-background-menu);
     color: var(--my-menu-color);
     font-weight: 600;
+}
+
+
+/* Responsividade */
+
+
+/* Comportamento para telas abaixo de 1245px de largura*/
+@media (max-width: 1245px) {
+    #topMenu a {
+        font-size: 1.2rem;
+        padding: 0 5px;
+    }
+    #topMenu {
+        padding: 0px;
+    }
+    #topMenu h1 {
+        margin: 0px;
+    }
+}
+
+/* Comportamento para telas abaixo de 918px de largura */
+
+@media (max-width: 918px) {
+    #topMenu, .menuPrincipal {
+        flex-direction: column;
+        align-items: unset;        
+    }
+    .menuPrincipal {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0px;
+        height: 0;
+    }
+    .menuPrincipal .menuItem {
+        padding: 10px;
+        font-size: 1.5rem;
+        display: none;
+    }
+    .menuPrincipal > .menuItem > a {
+        font-size: 1.5rem;
+    }
+    #topMenu {
+        padding-top: 20px;
+        height: 50px;
+    }
+    #menuButton {
+        display: block;
+        border: none;
+        font-size: 2rem;
+        position: absolute;
+        top: 10px;
+        right: 5%;        
+    }
+    #foto-perfil {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 90px;
+        left: 23%;
+        z-index: -1;
+    }
+    .conteudo {
+        margin-top: 280px;
+        
+    }
+    .botaoMsg button {
+        width: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    #topMenu .tituloPag {
+        font-size: 1.2rem;        
+    }
+}
+
+/* Funcionalidade do botão de menu expansivo */
+
+#topMenu:focus-within .menuItem {
+    display: block;
+    background-color: var(--my-background-menu);
 }

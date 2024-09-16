@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <!-- Importando a folha de estilo para o site -->
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div id="topMenu">
+    <!-- O bloco abaixo é responsável pelo menu de navegação entre as páginas -->
+    <nav id="topMenu">
         <header>        
             <h1 class="tituloPag">Contato</h1>              
-        </header>        
+        </header>
+        <button id="menuButton">&#9776;</button>
             <ul class="menuPrincipal">
                 <li class="menuItem"><a href="../index.html">Home</a></li>
                 <li class="menuItem"><a href="./sobre.html">Sobre mim</a></li>
@@ -18,9 +21,11 @@
                 <li class="menuItem"><a href="./portfolio.html">Meu Portfólio</a></li>
                 <li class="menuItem"><a href="./formulario.html">Contato</a></li>
             </ul>          
-    </div>
+        </nav>
+
+    <!-- Conteúdo do site. O Formulário criado conforme os requisitos. Como não era obrigatório, a funcionalidade será adicionada futuramente. -->
     <div class="conteudo formulario">
-        <form action="./formulario.html" method="post">
+        <form action="" method="post">
             <br><br>
             <label for="nome">Nome:</label><br>
             <input type="text" name="nome" placeholder="Digite seu nome" size="60" maxlength="60">
@@ -34,6 +39,8 @@
             <button>Enviar</button>
         </form>
     </div>
+
+    <!-- Rodapé com indicação de copyright -->
     <footer id="rodape">        
         <p class="copyright">&copy; Dio Ricardo, 2024</data></p>        
         <p class="copyright">Todos os direitos resevados.</p>

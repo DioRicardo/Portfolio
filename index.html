@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Importando a folha de estilo para o site -->
     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Importando uma referência externa para utilizar ícones pré-definidos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
         
 </head>
 <body>
-    <div id="topMenu">    
+    <!-- O bloco abaixo é responsável pelo menu de navegação entre as páginas -->
+    <nav id="topMenu">    
         <header>
             <h1>&lt;/&gt;  Dio Ricardo</h1>
         </header>
-            
+        <button id="menuButton">&#9776;</button>
         <ul class="menuPrincipal">
             <li class="menuItem"><a href="./index.html">Home</a></li>
             <li class="menuItem"><a href="./pages/sobre.html">Sobre mim</a></li>
@@ -20,22 +28,24 @@
             <li class="menuItem"><a href="./pages/portfolio.html">Meu Portfólio</a></li>
             <li class="menuItem"><a href="./pages/formulario.html">Contato</a></li>
         </ul>    
-    </div>
-    <div class="conteudo">
+    </nav>
+
+    <!-- Conteúdo do site -->
+    <div class="conteudo inicial">
     <hgroup>
         <h1>Olá!<br>Eu sou o Dio Ricardo</h1>
         <h2>Programador Júnior</h2>
     </hgroup>
     <p id="apresentacao">
-        Seja bem-vindo ao meu site de portifólio pessoal.
+        Seja bem-vindo ao meu site de portfólio pessoal.
         Sou um Desenvolvedor Júnior, apaixonado por tecnologia e atualmente cursando Análise e Desenvolvimento de Sistemas.        
     </p>
-    <a class="botaoMsg"
-        target="_blank"
-        href="https://api.whatsapp.com/send?phone=5521998691502&text=Oi Dio. Ví seu site e gostaria de conversar com você sobre uma oportunidade.">
-        <button><i class="fa fa-whatsapp"></i>Vamos Conversar?</button></a>
+    <!-- Botão de contato direto via whatsapp -->
+    <a class="botaoMsg" target="_blank" href="https://api.whatsapp.com/send?phone=5521998691502&text=Oi Dio. Ví seu site e gostaria de conversar com você sobre uma oportunidade."><button><i class="fa fa-whatsapp"></i> Vamos Conversar?</button></a>
     <img id="foto-perfil" src="./img/Dio Ricardo.png" alt="Foto de Dio.">    
     </div>
+
+    <!-- Rodapé com indicação de copyright -->
     <footer id="rodape">        
         <p class="copyright">&copy; Dio Ricardo, 2024</data></p>        
         <p class="copyright">Todos os direitos resevados.</p>
